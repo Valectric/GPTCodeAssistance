@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPTCodeAssistance", "GPTCodeAssistance\GPTCodeAssistance.csproj", "{5EFF0B7B-940E-4CD8-A41C-1CA416C63A02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GptCodeAssistantTests", "GptCodeAssistantTests\GptCodeAssistantTests.csproj", "{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{5EFF0B7B-940E-4CD8-A41C-1CA416C63A02}.Release|arm64.Build.0 = Release|arm64
 		{5EFF0B7B-940E-4CD8-A41C-1CA416C63A02}.Release|x86.ActiveCfg = Release|x86
 		{5EFF0B7B-940E-4CD8-A41C-1CA416C63A02}.Release|x86.Build.0 = Release|x86
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Debug|arm64.Build.0 = Debug|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Release|arm64.ActiveCfg = Release|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Release|arm64.Build.0 = Release|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED965CCD-0CEB-40B2-B539-06D7BE0FD0F1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
