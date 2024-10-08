@@ -1,42 +1,49 @@
 ﻿using System;
-using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.SemanticKernel;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
+using Kernel = Microsoft.SemanticKernel.Kernel;
+using Microsoft.SemanticKernel.ChatCompletion;
+using OpenAI.Chat;
+using GPTCodeAssistance.GPT;
 
-namespace GptCodeAssistant.GPT {
-    public class GptConnection {
+namespace GptCodeAssistant.GPT
+{
+    public class GptConnection
+    {
+        private readonly Kernel _kernel;
+
+        public GptConnection()
+        {
+            // Set up the logger (optional)
+            ILoggerFactory loggerFactory = NullLoggerFactory.Instance;
+
+            // Create the kernel builder
+            var builder = Kernel.CreateBuilder();
+            builder.Services.AddSingleton(loggerFactory); // Register the logger
+
+            // Build the kernel instance
+            _kernel = builder.AddOpenAIChatCompletion(
+                    modelId: GPTSettings.model,                   // OpenAI Model Name
+                    apiKey : GPTSettings.ApiKey,     // OpenAI API Key
+                    serviceId: "OpenAI_gpt4o"   // Service ID for reference
+                ).Build();
+
+        }
+
         // Asynchronous method for sending a prompt
-        public async Task<string> SendPromptAsync(string prompt) {
-            // Validate the input
-            if (string.IsNullOrEmpty(prompt)) {
-                throw new ArgumentException("Prompt cannot be null or empty");
-            }
+    public async Task<string> SendPromptAsync(string prompt) {
+            if (string.IsNullOrWhiteSpace(prompt))
+                throw new ArgumentException("Prompt cannot be null or empty.");
 
-            try {
-                // Simulate a delay to represent an async API call
-                await Task.Delay(100); // Simulate network delay or API call
+            var chatCompletion = _kernel.Services.GetService<ChatCompletion>();
+            var chatHistory = await chatCompletion.;
+            chatHistory.AddUserMessage(prompt);
 
-                // Simulate different error scenarios
-                if (prompt.Contains("timeout")) {
-                    throw new TimeoutException("The request timed out.");
-                } else if (prompt.Contains("network")) {
-                    throw new HttpRequestException("Network error occurred.");
-                } else if (prompt.Contains("rate limit")) {
-                    throw new ApplicationException("Rate limit exceeded.");
-                } else if (prompt.Contains("server error")) {
-                    throw new ApplicationException("An error occurred on the server.");
-                }
-
-                // Return a simulated response
-                return "This is a simulated async response to: " + prompt;
-            } catch (TimeoutException) {
-                throw;  // Pass the timeout exception to be handled at a higher level
-            } catch (HttpRequestException) {
-                throw;  // Pass the network exception
-            } catch (ApplicationException ex) {
-                throw new ApplicationException(ex.Message,ex);  // Pass the specific error messages
-            } catch (Exception) {
-                throw new ApplicationException("An unknown error occurred while calling the GPT API asynchronously.");
-            }
+            string response = await chatCompletion.GenerateMessageAsync(chatHistory);
+            return response;
         }
     }
 }
