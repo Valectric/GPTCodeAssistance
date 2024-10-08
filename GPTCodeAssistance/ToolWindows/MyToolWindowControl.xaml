@@ -13,16 +13,48 @@
              d:DesignHeight="300"
              d:DesignWidth="300"
              Name="MyToolWindow">
-    <Grid>
-        <StackPanel Orientation="Vertical">
-            <Label x:Name="lblHeadline"
-                   Margin="10"
-                   HorizontalAlignment="Center">Title</Label>
-            <Button Content="Click me!"
-                    Click="button1_Click"
-                    Width="120"
-                    Height="80"
-                    Name="button1" />
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <!-- Chat History -->
+            <RowDefinition Height="*"/>
+            <!-- Chat Input and Send Button -->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Chat history area (read-only) -->
+        <TextBox x:Name="txtChatHistory"
+                 Grid.Row="0"
+                 Margin="5"
+                 VerticalScrollBarVisibility="Auto"
+                 IsReadOnly="True"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
+                 Foreground="Black"
+                 FontSize="12"/>
+
+        <!-- Chat input and Send button -->
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    Margin="5">
+            <!-- Chat input area -->
+            <TextBox x:Name="txtChatInput"
+                     Width="200"
+                     Margin="0,0,5,0"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     Height="Auto"
+                     FontSize="12"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"/>
+
+            <!-- Send button -->
+            <Button Content="Send"
+                    Width="60"
+                    Height="30"
+                    VerticalAlignment="Center"
+                    Click="SendButton_Click"/>
         </StackPanel>
     </Grid>
 </UserControl>
