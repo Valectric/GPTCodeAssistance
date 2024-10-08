@@ -50,11 +50,12 @@
                      HorizontalScrollBarVisibility="Auto"/>
 
             <!-- Send button -->
-            <Button Content="Send"
-                    Width="60"
-                    Height="30"
-                    VerticalAlignment="Center"
-                    Click="SendButton_Click"/>
+            <Button x:Name="SendButton"
+                Content="Send"
+                Width="60"
+                Height="30"
+                VerticalAlignment="Center"
+                Click="SendButton_Click"/>
         </StackPanel>
     </Grid>
 </UserControl>

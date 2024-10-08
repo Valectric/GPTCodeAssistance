@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace GptCodeAssistant.GPT {
@@ -10,16 +11,32 @@ namespace GptCodeAssistant.GPT {
                 throw new ArgumentException("Prompt cannot be null or empty");
             }
 
-            // Simulate a delay to represent an async API call
-            await Task.Delay(100); // Simulate network delay or API call
+            try {
+                // Simulate a delay to represent an async API call
+                await Task.Delay(100); // Simulate network delay or API call
 
-            // Simulate an error response for testing purposes
-            if (prompt.Contains("error")) {
-                throw new ApplicationException("An error occurred while calling the GPT API asynchronously");
+                // Simulate different error scenarios
+                if (prompt.Contains("timeout")) {
+                    throw new TimeoutException("The request timed out.");
+                } else if (prompt.Contains("network")) {
+                    throw new HttpRequestException("Network error occurred.");
+                } else if (prompt.Contains("rate limit")) {
+                    throw new ApplicationException("Rate limit exceeded.");
+                } else if (prompt.Contains("server error")) {
+                    throw new ApplicationException("An error occurred on the server.");
+                }
+
+                // Return a simulated response
+                return "This is a simulated async response to: " + prompt;
+            } catch (TimeoutException) {
+                throw;  // Pass the timeout exception to be handled at a higher level
+            } catch (HttpRequestException) {
+                throw;  // Pass the network exception
+            } catch (ApplicationException ex) {
+                throw new ApplicationException(ex.Message,ex);  // Pass the specific error messages
+            } catch (Exception) {
+                throw new ApplicationException("An unknown error occurred while calling the GPT API asynchronously.");
             }
-
-            // Return a simulated response
-            return "This is a simulated async response to: " + prompt;
         }
     }
 }
