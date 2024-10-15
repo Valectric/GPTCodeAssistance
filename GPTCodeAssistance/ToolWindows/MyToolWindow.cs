@@ -14,7 +14,7 @@ namespace GPTCodeAssistance {
             return Task.FromResult<FrameworkElement>(new MyToolWindowControl());
         }
 
-        [Guid("2cc52b88-e720-4d3c-b2d8-a27c9f040f8b")]
+        [Guid("58b27c61-3293-4f02-bd74-84090bc7b95d")]
         internal class Pane:ToolkitToolWindowPane {
             public Pane() {
                 BitmapImageMoniker = KnownMonikers.ToolWindow;

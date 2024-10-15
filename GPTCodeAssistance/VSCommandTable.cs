@@ -10,7 +10,7 @@ namespace GPTCodeAssistance {
     /// Helper class that exposes all GUIDs used across VS Package.
     /// </summary>
     internal sealed partial class PackageGuids {
-        public const string GPTCodeAssistanceString = "5333bd60-2364-47f8-a200-6e9bc127e52f";
+        public const string GPTCodeAssistanceString = "6a404163-c460-4fba-8b10-3d4717fa1a8e";
         public static Guid GPTCodeAssistance = new Guid(GPTCodeAssistanceString);
     }
     /// <summary>

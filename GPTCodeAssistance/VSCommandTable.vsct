@@ -22,7 +22,7 @@
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="GPTCodeAssistance" value="{5333bd60-2364-47f8-a200-6e9bc127e52f}">
+    <GuidSymbol name="GPTCodeAssistance" value="{6a404163-c460-4fba-8b10-3d4717fa1a8e}">
       <IDSymbol name="MyCommand" value="0x0100" />
     </GuidSymbol>
   </Symbols>

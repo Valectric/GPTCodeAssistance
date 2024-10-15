@@ -5,12 +5,12 @@
 // ------------------------------------------------------------------------------
 namespace GPTCodeAssistance {
     internal sealed partial class Vsix {
-        public const string Id = "GPTCodeAssistance.79992677-dac6-4fd5-a7b3-0dda9427f5d5";
+        public const string Id = "GPTCodeAssistance.37936ed1-fd3b-4187-89b9-b733a365f6b9";
         public const string Name = "GPTCodeAssistance";
         public const string Description = @"Empty VSIX Project.";
         public const string Language = "en-US";
         public const string Version = "1.0";
-        public const string Author = "Company";
+        public const string Author = "Johan Holtby";
         public const string Tags = "";
     }
 }

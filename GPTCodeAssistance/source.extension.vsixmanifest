@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="GPTCodeAssistance.79992677-dac6-4fd5-a7b3-0dda9427f5d5" Version="1.0" Language="en-US" Publisher="Company" />
+    <Identity Id="GPTCodeAssistance.37936ed1-fd3b-4187-89b9-b733a365f6b9" Version="1.0" Language="en-US" Publisher="Johan Holtby" />
     <DisplayName>GPTCodeAssistance</DisplayName>
     <Description>Empty VSIX Project.</Description>
     <Icon>Resources\Icon.png</Icon>
