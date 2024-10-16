@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPTCodeAssistance", "GPTCodeAssistance\GPTCodeAssistance.csproj", "{C9AD8CD7-1717-43D1-90D4-0DAEF6D04D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPTCodeAssistanceTests", "GPTCodeAssistanceTests\GPTCodeAssistanceTests.csproj", "{9530DFA9-A434-4387-BACA-119CB83C374B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPTCodeAssistanceTests", "GPTCodeAssistanceTests\GPTCodeAssistanceTests.csproj", "{CDF1DCB0-4353-478E-ACE4-457624628144}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,18 +29,18 @@ Global
 		{C9AD8CD7-1717-43D1-90D4-0DAEF6D04D14}.Release|arm64.Build.0 = Release|arm64
 		{C9AD8CD7-1717-43D1-90D4-0DAEF6D04D14}.Release|x86.ActiveCfg = Release|x86
 		{C9AD8CD7-1717-43D1-90D4-0DAEF6D04D14}.Release|x86.Build.0 = Release|x86
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Debug|arm64.ActiveCfg = Debug|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Debug|arm64.Build.0 = Debug|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Debug|x86.Build.0 = Debug|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Release|arm64.ActiveCfg = Release|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Release|arm64.Build.0 = Release|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Release|x86.ActiveCfg = Release|Any CPU
-		{9530DFA9-A434-4387-BACA-119CB83C374B}.Release|x86.Build.0 = Release|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Debug|arm64.Build.0 = Debug|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Debug|x86.Build.0 = Debug|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Release|arm64.ActiveCfg = Release|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Release|arm64.Build.0 = Release|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDF1DCB0-4353-478E-ACE4-457624628144}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
