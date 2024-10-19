@@ -1,2 +1,0 @@
-# GPTCodeAssistance
-GPT Code Assistance
