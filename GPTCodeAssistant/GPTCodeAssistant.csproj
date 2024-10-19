@@ -48,6 +48,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\MyToolWindowCommand.cs" />
     <Compile Include="GPTCodeAssistantPackage.cs" />
+    <Compile Include="SK\SemanticKernelManager.cs" />
+    <Compile Include="SK\SKSettings.cs" />
     <Compile Include="source.extension.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
