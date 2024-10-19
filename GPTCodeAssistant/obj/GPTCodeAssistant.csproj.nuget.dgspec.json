@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JohanHoltby\\GithubShort\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj": {}
+    "C:\\Users\\JohanHoltby\\Documents\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JohanHoltby\\GithubShort\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj": {
+    "C:\\Users\\JohanHoltby\\Documents\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JohanHoltby\\GithubShort\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\JohanHoltby\\Documents\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj",
         "projectName": "GPTCodeAssistant",
-        "projectPath": "C:\\Users\\JohanHoltby\\GithubShort\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj",
+        "projectPath": "C:\\Users\\JohanHoltby\\Documents\\GPTCodeAssistance\\GPTCodeAssistant\\GPTCodeAssistant.csproj",
         "packagesPath": "C:\\Users\\JohanHoltby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JohanHoltby\\GithubShort\\GPTCodeAssistance\\GPTCodeAssistant\\obj\\",
+        "outputPath": "C:\\Users\\JohanHoltby\\Documents\\GPTCodeAssistance\\GPTCodeAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -46,6 +46,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[16.0.29.6, )"
+            },
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[4.12.0-2.final, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.12.0-2.final, )"
             },
             "Microsoft.SemanticKernel": {
               "target": "Package",
